@@ -152,7 +152,6 @@ const Services = () => {
         >
           {services.map((service, index) => {
             const isActive = activeService === index;
-            const isHovered = hoveredService === index;
             // Dim if we are hovering something else, OR if something is active and this is not it (optional, but cleaner to just use hover)
             // The user wanted "dim others on hover" specifically.
             const isDimmed =
